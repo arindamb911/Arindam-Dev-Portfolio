@@ -1,0 +1,54 @@
+:root{
+    --cw: white;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 60px;
+}
+
+/* Navbar */
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    background-color: #8B0000;
+    color: var(--cw);
+    padding: 10px 20px;
+    z-index: 1000;
+}
+.nav-list{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+.nav-list li{
+    margin-left: 20px;
+}
+.nav-list a{
+    color: var(--cw);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition:  color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.nav-list a:hover{
+    color: #fff;
+    background-color: #00bcd4;
+    border-radius: 50px;
+}
+
+/* Welcome Section */
